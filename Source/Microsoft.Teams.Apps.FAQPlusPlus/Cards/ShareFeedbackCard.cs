@@ -84,11 +84,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         Size = AdaptiveTextSize.Large,
                         Wrap = true,
                     },
-                    new AdaptiveTextBlock
-                    {
-                        Text = !string.IsNullOrWhiteSpace(data.UserQuestion) ? Strings.ResultsFeedbackText : Strings.FeedbackSubtitleText,
-                        Wrap = true,
-                    },
+                    
                     new AdaptiveColumnSet
                     {
                         Columns = new List<AdaptiveColumn>
@@ -176,13 +172,6 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         },
                     },
                     
-                    // Adds the "My Service Centre" button.
-                    new AdaptiveOpenUrlAction
-                    {
-                        Title = Strings.MyServiceCentreButtonText,
-                        Url = new System.Uri("https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing"),
-                    
-                    },
                 },
             };
 
