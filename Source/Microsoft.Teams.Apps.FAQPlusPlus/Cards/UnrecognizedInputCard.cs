@@ -37,7 +37,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                 {
                     new AdaptiveSubmitAction
                     {
-                        Title = Strings.DidntAnswerQuestionButtonText,
+                        Title = Strings.ShareFeedbackButtonText,
                         Data = new ResponseCardPayload
                         {
                             MsTeams = new CardAction
@@ -48,7 +48,14 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                             },
                             UserQuestion = userQuestion,
                         },
-                    },                   
+                    },
+                    // Adds the "My Service Centre" button.
+                    new AdaptiveOpenUrlAction
+                    {
+                        Title = Strings.MyServiceCentreButtonText,
+                        Url = new System.Uri("https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing"),
+                    
+                    },
                 },
             };
 
