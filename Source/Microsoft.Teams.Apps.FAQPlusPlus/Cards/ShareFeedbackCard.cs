@@ -84,6 +84,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         Size = AdaptiveTextSize.Large,
                         Wrap = true,
                     },
+                    
                     new AdaptiveColumnSet
                     {
                         Columns = new List<AdaptiveColumn>
@@ -170,6 +171,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                             KnowledgeBaseAnswer = data.KnowledgeBaseAnswer,
                         },
                     },
+                    
                 },
             };
 

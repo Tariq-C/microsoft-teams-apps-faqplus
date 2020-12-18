@@ -1,4 +1,4 @@
-﻿// <copyright file="ResponseCard.cs" company="Microsoft">
+// <copyright file="ResponseCard.cs" company="Microsoft">
 // Copyright (c) Microsoft. All rights reserved.
 // </copyright>
 
@@ -184,6 +184,13 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         UserQuestion = userQuestion,
                         KnowledgeBaseAnswer = answer,
                     },
+                },
+                // Adds the "My Service Centre" button.
+                new AdaptiveOpenUrlAction
+                {
+                    Title = Strings.MyServiceCentreButtonText,
+                    Url = new System.Uri("https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing"),
+                    
                 },
             };
 
